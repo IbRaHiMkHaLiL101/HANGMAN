@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman Game</h1>
+        
+        <!-- Category Selection -->
+        <div id="category-selection">
+            <label for="category">Choose a category:</label>
+            <select id="category">
+                <option value="marvel">Marvel</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="tvShows">TV Shows</option>
+            </select>
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+        
+        <div id="game-area" style="display: none;">
+            <div class="game-container">
+                <div class="word-container" id="word-container">
+                    <!-- Word will be displayed here -->
+                </div>
+                <div class="hearts-container" id="hearts-container">
+                    <!-- Hearts will be displayed here -->
+                </div>
+            </div>
+            <div class="letters-container" id="letters-container">
+                <!-- Alphabet buttons will be generated here -->
+            </div>
+            <div class="message" id="message"></div>
+            <button id="restart-btn" class="restart-btn" onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
